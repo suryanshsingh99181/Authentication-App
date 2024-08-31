@@ -13,6 +13,7 @@ const ChatPage = () => {
   return (
     <div className="container mx-auto p-4 flex ">
       <PotentialChats />
+      <AllUsersList />
       {userChats?.length < 1 ? null : (
         <main className="flex justify-evenly h-80 w-full bg-slate-200 border border-black">
           {isUserChatsLoading && <p>Loading chats...</p>}
